@@ -4,7 +4,12 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            Console.WriteLine("Please select data server list, mongo or sql");
+            string userinput = Console.ReadLine();
+
+            var dataAccess = DataAccessFactory.DataAccess(userinput);
+            dataAccess.LoadData();
+            dataAccess.SaveData();
         }
     }
 }
