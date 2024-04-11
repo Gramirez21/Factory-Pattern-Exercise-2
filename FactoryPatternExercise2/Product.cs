@@ -10,5 +10,8 @@ namespace FactoryPatternExercise2
     {
         public int Price { get; set; }
         public string Name { get; set; }
+
+        
+
     }
 }
